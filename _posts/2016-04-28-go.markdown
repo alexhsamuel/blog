@@ -4,11 +4,11 @@ title:  "go takeahike"
 date:   2016-04-28 13:52:59 -0400
 categories: go proglang
 ---
-For a more politie and well thought-out summary, see [this blog post](http://yager.io/programming/go.html) instead.
+For a more polite and well thought-out summary, see [this blog post](http://yager.io/programming/go.html) instead.
 
 I spent some time recently learning Go.  The tools and tutorials are nice, and the marketing budget is impressive.  But the actual programming was not fun.
 
-Go gives you a handful of wooden blocks and a couple cans of playdough.  If you're the kind of developer who tends to impale him/herself with anything sharper than a crayon, it's a good language for you.  If, however, you are accustomed to working with full professional toolkit, you will find yourself hamstrung by the lack of all sorts of toys and goodies you've gotten used to using to make your life easier.  
+Go gives you a handful of wooden blocks and a couple cans of playdough.  If you're the kind of developer who tends to impale him/herself with anything sharper than a crayon, it's a good language for you.  If, however, you are accustomed to working with full professional toolkit, you will find yourself hamstrung by the lack of all sorts of toys and goodies you've gotten used to using to make your life easier.
 
 It's not that I object to small languages; small languages are great.  It's just that Go shows very little creativity in choosing carefully a small set of features that work together to produce a rich, flexible, and colorful set of programing options.  Instead, it takes us back to the good old days, where were couldn't rely on programming languages to make our work easier, and instead built huge forts out of monochromatic tounge depressors.
 

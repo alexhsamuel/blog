@@ -6,10 +6,10 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: rants
+title: blog
 email: alex@alexsamuel.net
-description: > # this means to ignore newlines until "baseurl:"
-  Alex Samuel's blog.
+
+destination: docs
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 # twitter_username: jekyllrb
@@ -17,3 +17,6 @@ github_username:  alexhsamuel
 
 # Build settings
 markdown: kramdown
+
+description: |
+  Alex Samuel's blog.

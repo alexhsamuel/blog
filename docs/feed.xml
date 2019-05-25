@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog</title>
+    <description>Alex Samuel&#39;s blog.
+</description>
+    <link>http://yourdomain.com/</link>
+    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 25 May 2019 15:14:44 -0400</pubDate>
+    <lastBuildDate>Sat, 25 May 2019 15:14:44 -0400</lastBuildDate>
+    <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>hedge fund glossary</title>
+        <description>&lt;h1 id=&quot;hedge-fund-glossary&quot;&gt;Hedge fund glossary&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;stat arb = statistical arbitrage = making money by predicting which prices are slightly likely (far from certain!) to go up or down, and taking a number of positions that are fairly likely to go up in aggregate even if some are up and some are down&lt;/li&gt;
+  &lt;li&gt;quant = quantitative = run by mathematical or statistical models, as opposed to “discretionary” which is run by human judgement&lt;/li&gt;
+  &lt;li&gt;automated = computers do the trading, not people&lt;/li&gt;
+  &lt;li&gt;trading team = front office team = a group that is directly responsible for some capital and makes investment decisions, as opposed to “mid office” and “back office” which are concerned with trading operations and accounting, or firm-wide technology teams which serve a number of trading groups as clients&lt;/li&gt;
+  &lt;li&gt;hedge fund = alternative investment manager = company that invests capital on behalf of clients; can invest in nearly anything; supposed to make money in any market conditions (thus “hedge”… hedged against market downturns)&lt;/li&gt;
+  &lt;li&gt;prop trading = proprietary trading = a company investing its own capital&lt;/li&gt;
+  &lt;li&gt;family office = prop fund of a single wealthy individual&lt;/li&gt;
+  &lt;li&gt;HFT = high frequency trading = companies that make money by doing millions of little trades but holding positions for very short periods of time (Flash Boys)&lt;/li&gt;
+  &lt;li&gt;buy side = businesses that invest capital&lt;/li&gt;
+  &lt;li&gt;sell side = businesses that service the buy side, mainly banks&lt;/li&gt;
+  &lt;li&gt;bank (in our context) = big integrated financial firm
+    &lt;ul&gt;
+      &lt;li&gt;investment banking = advising corporate clients on raising money and capital structure&lt;/li&gt;
+      &lt;li&gt;capital markets = trading and other services to clients such as hedge funds&lt;/li&gt;
+      &lt;li&gt;commercial banking = something to do with lending money to companies and managing trade (?)&lt;/li&gt;
+      &lt;li&gt;consumer banking = savings/checking accounts, ATMs, credit cards, investment accounts, mortgages, student loans, …&lt;/li&gt;
+      &lt;li&gt;others&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;job-functions&quot;&gt;Job functions&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;quant = quantitative researcher = builds mathematical models of asset prices and other things&lt;/li&gt;
+  &lt;li&gt;dev = developer = engineer = technologist = writes software and designs computer systems&lt;/li&gt;
+  &lt;li&gt;quant/dev = quantitative developer = dev who works on more mathematical software as opposed to infrastructure and systems engineering&lt;/li&gt;
+  &lt;li&gt;trader = makes trades and/or monitors automated trading&lt;/li&gt;
+  &lt;li&gt;analyst = analyzes and understands some facet of financial markets; might do some quant work&lt;/li&gt;
+  &lt;li&gt;data scientist = term from outside finance for someone who analyzes data, possibly builds models from data; kind of like quant&lt;/li&gt;
+  &lt;li&gt;data engineer = dev who specializes in systems for processing data&lt;/li&gt;
+  &lt;li&gt;devops = in charge for maintaining and monitoring software systems&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;asset-classes&quot;&gt;Asset classes&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;equities = stocks&lt;/li&gt;
+  &lt;li&gt;futures = simple derivatives used mainly to trade things that are hard to trade directly
+    &lt;ul&gt;
+      &lt;li&gt;energy (oil, natural gas, electricity)&lt;/li&gt;
+      &lt;li&gt;metals (gold, silver, copper)&lt;/li&gt;
+      &lt;li&gt;agricultural commodities (corn, wheat, soy, cattle, pork bellies, OJ, coffee)&lt;/li&gt;
+      &lt;li&gt;lots of others&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;FX = foreign exchange = currencies = foreign currencies like GBP, EUR, JPY&lt;/li&gt;
+  &lt;li&gt;vol = volatility = derivatives linked to how much prices bounce around rather than whether they go up or down, mainly options&lt;/li&gt;
+  &lt;li&gt;FI = fixed income = instruments that (are supposed to) pay fixed cash flows
+    &lt;ul&gt;
+      &lt;li&gt;corporate bonds&lt;/li&gt;
+      &lt;li&gt;sovereign bonds (i.e. issued by national governments)&lt;/li&gt;
+      &lt;li&gt;derivatives linked to interest rates&lt;/li&gt;
+      &lt;li&gt;lots of others&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;firms&quot;&gt;Firms&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;fintech: companies selling financial products or services
+    &lt;ul&gt;
+      &lt;li&gt;consumer fintech: Betterment, Oscar&lt;/li&gt;
+      &lt;li&gt;institutional fintech: sell to other finance companies&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;hedge funds
+    &lt;ul&gt;
+      &lt;li&gt;big: Two Sigma, D.E. Shaw, Citadel, Millenium, WorldQuant, Renaissance Technology&lt;/li&gt;
+      &lt;li&gt;small (there are thousands)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;HFT: Hudson River Trading, Jump Trading, Virtu, Tower Research, Knight Capital&lt;/li&gt;
+  &lt;li&gt;banks
+    &lt;ul&gt;
+      &lt;li&gt;big five (US): Goldman Sachs, JP Morgan Chase, Morgan Stanley, Citi, BofA/Merrill Lynch&lt;/li&gt;
+      &lt;li&gt;big foreign banks: UBS, Credit Suisse, Deutsche Bank, Nomura, HSBC, BNP, SocGen&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Note that there is overlap: for instance Citadel, Two Sigma, and Millennium all
+do HFT as well, and banks may do HFT and other prop trading (but less so since
+2008).&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 25 May 2019 00:00:00 -0400</pubDate>
+        <link>http://yourdomain.com/finance/2019/05/25/finance-glossary.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/finance/2019/05/25/finance-glossary.html</guid>
+        
+        
+        <category>finance</category>
+        
+      </item>
+    
+      <item>
+        <title>go takeahike</title>
+        <description>&lt;p&gt;For a more polite and well thought-out summary, see &lt;a href=&quot;http://yager.io/programming/go.html&quot;&gt;this blog post&lt;/a&gt; instead.&lt;/p&gt;
+
+&lt;p&gt;I spent some time recently learning Go.  The tools and tutorials are nice, and the marketing budget is impressive.  But the actual programming was not fun.&lt;/p&gt;
+
+&lt;p&gt;Go gives you a handful of wooden blocks and a couple cans of playdough.  If you’re the kind of developer who tends to impale him/herself with anything sharper than a crayon, it’s a good language for you.  If, however, you are accustomed to working with full professional toolkit, you will find yourself hamstrung by the lack of all sorts of toys and goodies you’ve gotten used to using to make your life easier.&lt;/p&gt;
+
+&lt;p&gt;It’s not that I object to small languages; small languages are great.  It’s just that Go shows very little creativity in choosing carefully a small set of features that work together to produce a rich, flexible, and colorful set of programing options.  Instead, it takes us back to the good old days, where were couldn’t rely on programming languages to make our work easier, and instead built huge forts out of monochromatic tounge depressors.&lt;/p&gt;
+
+&lt;p&gt;Go takes the somewhat odd, but now familiar, design decisions of C and replaces many of them with equally odd alternatives.  What’s up with &lt;code class=&quot;highlighter-rouge&quot;&gt;:=&lt;/code&gt; declarations all over the place and their complicated scoping rules?  It’s a clunky and complicated band-aid.  Go dilutes the semantic simplicity of C with garbage collection, so that the mapping from Go to assembly in your head is much less transparent.  (I find GC to be convenient at times, but I’ve rarely found memory management to be a major challenge in my architectures, so I don’t see what the big deal is.)  It bakes a few things into the language that could probably have been left as libraries—goroutines and channels&amp;amp;mdeash;while omitting lots of creature comforts that allow you to write concise that says what it does without additional ceremony.  It eschews real generality and instead forces you to write code in a specific style that by modern standards feels quite clunky and outdated.&lt;/p&gt;
+
+&lt;p&gt;Go also forces a huge pile of aesthetics.  On account of this unwelcome imposition, I feel quite entitled to pass judgement on Go’s aesthetic chocies: it gets almost all of them wrong.  It strongly encourages your code to be ugly, and if you acceidentally write a lovely statement or two, &lt;code class=&quot;highlighter-rouge&quot;&gt;gofmt&lt;/code&gt; will quickly fix that for you.  Code formatting is for humans to communicate with other humans, and computers do a bad job at it, so designing a language for ease of mechanical formatting is an ill-founded goal.  Consistency is no excuse for ugliness.&lt;/p&gt;
+
+&lt;p&gt;I can’t think what I’d use Go for.  It’s not a rich interpreted language, so not suitable for scripting or interactive use.  It doesn’t have the structural facilities for large architectures.  It doesn’t provide mechanisms for extension or hosting DSLs.  The code kind of makes my eyes hurt.  It compiles fast, which is nice, but this is less valueable for the small- to mid-sized programs it seems structured for.  Yes, it’s easy to learn—but as a serious programmer, I’m happy to invest the time to learn a modern, sophisticated language with a solid conceptual foundation that will not only allow me to write elegant code, but teach me to do it.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 28 Apr 2016 13:52:59 -0400</pubDate>
+        <link>http://yourdomain.com/go/proglang/2016/04/28/go.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/go/proglang/2016/04/28/go.html</guid>
+        
+        
+        <category>go</category>
+        
+        <category>proglang</category>
+        
+      </item>
+    
+  </channel>
+</rss>

@@ -9,7 +9,7 @@
 title: blog
 email: alex@alexsamuel.net
 
-destination: docs
+destination: _site
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "http://alexhsamuel.github.io"
 # twitter_username: jekyllrb

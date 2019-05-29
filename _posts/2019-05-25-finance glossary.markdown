@@ -5,7 +5,7 @@ date:   2019-05-25
 categories: finance
 ---
 
-# Hedge fund glossary
+This is a brain dump of hedge fund terminology.
 
 - stat arb = statistical arbitrage = making money by predicting which prices are slightly likely (far from certain!) to go up or down, and taking a number of positions that are fairly likely to go up in aggregate even if some are up and some are down
 - quant = quantitative = run by mathematical or statistical models, as opposed to “discretionary” which is run by human judgement

@@ -11,7 +11,7 @@ email: alex@alexsamuel.net
 
 destination: docs
 baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "http://alexhsamuel.github.io/"
+url: "http://alexhsamuel.github.io"
 # twitter_username: jekyllrb
 github_username:  alexhsamuel
 theme: jekyll-theme-minimal

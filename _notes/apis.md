@@ -42,6 +42,33 @@ honor).
 
 # Smells
 
+### Correlated parameters
+
+Avoid using a parameter whose interpretation depends on the value of another,
+for example a parameter that is ignored if another takes a certain value.
+
+Likewise for attributes: if multiple attributes are tightly coupled, look for
+ways to decouple them.
+
+
+### Difficult to name or document
+
+If a function or type is difficult to name, this suggests its purpose is not
+clear.
+
+Likewise, if the documentation is difficult to phrase, this suggests the code is
+not clear.  If the function requires detailed usage information, its design
+should be simplified.  If documentation contains lots of loosely-related details,
+this suggests the code should be split into independent units.
+
+
+### Nounified verb names
+
+If a type's name is a nounified verb, this suggests it is a behavior rather than
+a data structure, and might better be modeled by a function.  Nounified names
+are mostly &ndash;er names, like "downloader" or "parser".
+
+
 ## Decomposition
 
 Code smells that suggest functions or classes should be decomposed.

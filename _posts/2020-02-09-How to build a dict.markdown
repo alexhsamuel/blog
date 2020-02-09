@@ -232,8 +232,8 @@ corresponding way to generate a dictionary?  Not directly.  But we can rely on
 the fact that Python can construct a dict from any iterable of (key, value)
 pairs.  It doesn't even demand a sequence; a generator is fine too.  This
 technique is useful when there isn't a one-to-one relation between inputs and
-resulting items.  Declare a local generator function, and convert this to a
-dict.
+resulting items.  Write and call a function that generates (`yield`s) items, and
+convert these to a dict.
 ```py
 def count_items():
     for w in words:

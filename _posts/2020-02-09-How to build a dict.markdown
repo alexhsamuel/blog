@@ -16,13 +16,12 @@ But of course this mutates the dict, so you wouldn't want to do this, for
 instance, with a function argument.
 ```py
 def fn(inputs):
-    inputs["foo"] = 42
+    inputs["foo"] = 42   # BAD
     # Do things...
 ```
 
-This is bad because your change to `inputs` is now visible to the caller.  Also,
-you are relying the caller actually passed you dict or at least something that
-behaves just like a mutable dict.
+You've mutated the argument, and this change is visible to the caller after the
+function returns.  This is usually underireable.
 
 In recent versions of Python, you can use `**` easily to create a new dict with
 additional keys.
@@ -52,7 +51,15 @@ The mutable way is straightforward.
 del my_dict["foo"]
 ```
 
-But again, you probably wouldn't want to do this with a function argument.
+If you are not sure whether `"foo"` is a key, but you want to remove it if it
+is, the best way is with `pop()`.  You need to pass a second argument;
+otherwise, `pop()` raises an exception if the key is not present.  Since we're
+not interested in the value, any second argument will do.
+```py
+my_dict.pop("foo", None)
+```
+
+But once again, you probably wouldn't want to do this with a function argument.
 There isn't an equivalent with `**`, but you can use a dict comprehension with
 an expicit filter on the keys.
 ```py
@@ -80,10 +87,6 @@ def fn(inputs):
     # Do things...
 ```
 
-Note here that we can't just `del["foo"]` unless we're sure the argument will
-contain this key.  And you have to provide a second argument to `dict.pop`;
-otherwise it too will raise an exception if the key is missing.
-
 
 # Merging two dicts
 
@@ -97,7 +100,8 @@ Again, order matters: later keys replace earlier ones.
 
 # Building a dict from scratch
 
-Let's start with the fully imperative way, which we all figure out pretty early.
+Let's start with the fully imperative way.  This is usually the first pattern
+that people learn.
 ```py
 STOP_WORDS = {"I", "you", "he", "and", "to", "not"}
 
@@ -116,7 +120,7 @@ Here's the same logic as a generator.
 counts = { str(w): len(str(w)) for w in words if str(w) not in STOP_WORDS }
 ```
 
-This fits now on one line, though it can be nice to split it for readability.
+This fits now on one line, though it is nice to split it for readability.
 ```py
 counts = {
     str(w): len(str(w))
@@ -126,7 +130,7 @@ counts = {
 ```
 - Pros: Declarative.  Once you are used to dict comprehensions, it's very easy
   to understand the control flow.  (In contrast, imperative code is more
-  flexible and requires careful reading.)
+  flexible, so it requires careful reading.)
 - Cons: We're calling `str(w)` three times!
 
 In this case, we can deduplicate the `str(w)` calls by "preprocessing" the
@@ -148,10 +152,10 @@ def count(word):
 counts = { w: count(w) for w in words }
 ```
 - Pros: The loop and the dict structure are separated from the inner logic.
-- Cons: More typing.
+- Cons: No way to skip items.
 
-This doesn't work so well here, because we would like to skip words in
-`STOP_WORDS`, but there is no easy way for the function `count()` to indicate
+This doesn't work so well here, because we would like to skip words that appear
+in `STOP_WORDS`, but there is no easy way for the function `count()` to indicate
 that an item should be skipped.  We could use a flag value to indicate, but this
 gets cumbersome.
 ```py
@@ -196,6 +200,16 @@ counts = {
 - Pros: Less tricky.
 - Cons: Requires Python 3.8.
 
+Note that we're not calling `str()` anymore here.  We can restore it using the
+walrus operator, and in this case omit the local function entirely.
+```py
+counts = {
+    w: len(w)
+    for word in words
+    if (w := str(word)) not in SKIP_WORDS
+}
+```
+
 One advantage of using a local function is that you sometimes can use early
 `returns` to simplify the control flow.  This is, for example, nice in functions
 try a number of options or conversions.
@@ -203,7 +217,6 @@ try a number of options or conversions.
 def to_word(word):
     if isinstance(word, bytes):
         return word.decode()
-
     word = str(word)
     if word == "":
         return "<empty>"
@@ -214,28 +227,32 @@ def to_word(word):
 counts = { w: len(to_word(w)) for w in words }
 ```
 
-One final technique relies on the fact that Python can construct a dict from any
-iterable of (key, value) pairs.  It doesn't even need to a seequence; a
-generator is fine.  This technique is useful when there isn't a one-to-one
-relation between inputs and resulting items.  Declare a local generator
-function, and convert this to a dict.
+Python lets you build iterables with generator functions.  Is there some
+corresponding way to generate a dictionary?  Not directly.  But we can rely on
+the fact that Python can construct a dict from any iterable of (key, value)
+pairs.  It doesn't even demand a sequence; a generator is fine too.  This
+technique is useful when there isn't a one-to-one relation between inputs and
+resulting items.  Declare a local generator function, and convert this to a
+dict.
 ```py
-def count():
+def count_items():
     for w in words:
         w = str(w)
         if w not in STOP_WORDS:
             yield w, len(w)
 
-counts = dict(count())
+counts = dict(count_items())
 ```
-- Pros: As flexible as imperative code, but doesn't mutate the dict.
-- Cons: As verbose as imperative code.
 
 If `count()` doesn't yield for a given element, no item is added to the dict.
 
+- Pros: All the flexibility of imperative code, but doesn't mutate a dict, so
+  more functional in nature.
+- Cons: As verbose as imperative code.
+
 You can also produce multiple items per input with this technique.
 ```py
-def count():
+def count_items():
     for word in words:
         word = str(word)
         if word in STOP_WORDS:
@@ -244,6 +261,6 @@ def count():
         for w in word.split():
             yield w, len(w)
 
-counts = dict(count())
+counts = dict(count_items())
 ```
 

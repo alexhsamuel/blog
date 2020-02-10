@@ -20,7 +20,6 @@ This is a brain dump of hedge fund terminology.
 - bank (in our context) = big integrated financial firm
   - investment banking = advising corporate clients on raising money and capital structure
   - capital markets = trading and other services to clients such as hedge funds
-  - commercial banking = something to do with lending money to companies and managing trade (?)
   - consumer banking = savings/checking accounts, ATMs, credit cards, investment accounts, mortgages, student loans, ...
   - others
 

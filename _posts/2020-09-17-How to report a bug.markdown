@@ -5,14 +5,14 @@ maximize the chance of this outcome, provide as much information as possible.
 
 Worst:
 
-> Did something change with the database?
+> Did something change with in database?
 > 
 > Thanks,
 >
 > Alex
 
 That's not a bug report at all.  The answer is yes, of course something changed,
-that's what computers are for.
+that's what databases are for.
 
 Bad:
 
@@ -67,7 +67,7 @@ Don't worry if the transcript seems a little long.  The computer can handle it.
 
 This maximizes your chances of getting the response you want:
 
-> I can connect connect and run some other stuff, but I can't run that query
+> I can can connect and run some other stuff, but I can't run that query
 > either.  I'll take a look. 
 > 
 > The query seems to work on the backup server.  Use that for now

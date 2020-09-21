@@ -8,6 +8,7 @@ Worst:
 > Did something change with the database?
 > 
 > Thanks,
+>
 > Alex
 
 That's not a bug report at all.  The answer is yes, of course something changed,
@@ -18,6 +19,7 @@ Bad:
 > The database is down.  Can you please take a look?
 > 
 > Thanks,
+>
 > Alex
 
 Which database?  What does "down" mean?  Can't connect?  Can't log in?  Access
@@ -30,6 +32,7 @@ Also bad:
 > them?
 > 
 > Thanks,
+>
 > Alex
 
 Speculate about the problem if you want, but only _after_ you've included all
@@ -47,6 +50,7 @@ Much better:
 > Can you please take a look?
 > 
 > Thanks,
+>
 > Alex
 
 This doesn't take any longer to write.  Just cut and paste.  By simply
@@ -85,5 +89,6 @@ your problem isn't ideal, or your expectations aren't accurate.
 > https://wiki.internal.com/user-api.
 > 
 > Thanks,
+> 
 > Alice
 

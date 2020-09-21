@@ -29,7 +29,7 @@ play Twenty Questions?
 Also bad:
 
 > I think someone has messed up permissions on the database.  Can you please fix
-> them?
+> it?
 > 
 > Thanks,
 >
@@ -82,8 +82,8 @@ your problem isn't ideal, or your expectations aren't accurate.
 
 > Dear Alex,
 > 
-> The old `query-users` script, and the table behind it, was removed two weeks
-> ago; please `git pull` your checkout.
+> Your checkout is out of date.  The old `query-users` script, and the table
+> behind it, was removed two weeks ago.
 > 
 > You can use the new user API for this, instead.  Docs are here: 
 > https://wiki.internal.com/user-api.

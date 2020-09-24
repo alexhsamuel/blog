@@ -1,7 +1,7 @@
 Python lets you use either single quotes (`'string'`) or double quotes
-(`"string"`) for strings, and they're almost identical.  The only difference is
-that in a single-quoted string, one must escape single quotes, while conversely
-double quotes in a double-quoted string.
+(`"string"`) for strings.  The only difference is that in a single-quoted
+string, one must escape single quotes, while conversely double quotes in a
+double-quoted string.
 
 I generally use double quotes.  People sometimes ask me why.
 
@@ -12,13 +12,13 @@ I generally use double quotes.  People sometimes ask me why.
   quotes are on the same key but shifted.  On ISO keyboards, double quotes are
   Shift-2, on the top row.
 
-- Consistent with how Python renders strings: `repr("foo")` is `'foo'`
+- Consistent with how Python renders strings: `repr("foo")` is `'foo'`.
 
 
 ### Advantages of double quotes:
 
-- We use the same character for a single quote and an apostrophe.  In computer
-  English, apostrophes appear much more often than double quotes.
+- We use a single quote as an apostrophe.  Messages inteded for users frequently
+  contain apostrophes, and it is clumsy to escape them.
    
   Thus,
   ```py
@@ -36,10 +36,10 @@ I generally use double quotes.  People sometimes ask me why.
   visually distinct from left ticks, which are often used to specify code
   formatting in Sphinx, Markdown, and other doc styles.
 
-- In American English, double quotes are primarily used.  Single quotes are used
-  for nested quotes only.
+- American English uses double quotes primarily.  Single quotes are for nested
+  quotes only.
 
-- Some people are used to other common languages that accept double quotes only
+- Some people are used to other programming languages that use double quotes
   for strings, such as C-like languages, many LISPs, and JSON.
 
 

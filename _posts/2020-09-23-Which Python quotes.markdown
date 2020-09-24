@@ -37,6 +37,9 @@ I generally use double quotes.  People sometimes ask me why.
 - Double quotes are visually distinct from left ticks, which are often used to
   specify code formatting in Sphinx, Markdown, and other doc styles.
 
+- In American English, double quotes are primarily used.  Single quotes are used
+  for nested quotes only.
+
 - Some people are used to other common languages that accept double quotes only
   for strings, such as C-like languages, many LISPs, and JSON.
 

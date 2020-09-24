@@ -1,5 +1,5 @@
-Python lets you use either single quotes (`'string'`') or double quotes
-('"string"`) for strings, and they're almost identical.  The only difference is
+Python lets you use either single quotes (`'string'`) or double quotes
+(`"string"`) for strings, and they're almost identical.  The only difference is
 that in a single-quoted string, one must escape single quotes, while conversely
 double quotes in a double-quoted string.
 

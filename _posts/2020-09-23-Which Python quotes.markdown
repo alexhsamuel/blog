@@ -8,9 +8,9 @@ I generally use double quotes.  People sometimes ask me why.
 
 ### Advantages of single quotes:
 
-- Easier to type.  Single quotes are on the home row, while double quotes
-  require a shift chord.  On ISO keyboards, double quotes is Shift-2, on the
-  top row.
+- Easier to type.  Single quotes are on the home row.  On ANSI keyboards, double
+  quotes are on the same key but shifted.  On ISO keyboards, double quotes are
+  Shift-2, on the top row.
 
 - Consistent with how Python renders strings: `repr("foo")` is `'foo'`
 
@@ -32,10 +32,9 @@ I generally use double quotes.  People sometimes ask me why.
   Some people work around this by avoiding contractions (`'did not'`) or
   by misspelling the contraction deliberately (`'didnt'`).
 
-- Double quotes stand out visually in dense code.
-
-- Double quotes are visually distinct from left ticks, which are often used to
-  specify code formatting in Sphinx, Markdown, and other doc styles.
+- Double quotes stand out visually in dense code.  Double quotes are also
+  visually distinct from left ticks, which are often used to specify code
+  formatting in Sphinx, Markdown, and other doc styles.
 
 - In American English, double quotes are primarily used.  Single quotes are used
   for nested quotes only.

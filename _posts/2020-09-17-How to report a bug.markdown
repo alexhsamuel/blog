@@ -48,7 +48,7 @@ Much better:
 > Traceback (most recent call last):
 >   File "query-users", line 23, in main
 >     users = query_users()
->   File "/home/alex/dev/python/users.py", line 77
+>   File "/home/alex/dev/python/users.py", line 77, in query_users
 >     query.execute(sql)
 > pyodbc.ProgrammingError: '[42000] [SAP][ASE ODBC Driver][Adaptive Server Enterprise]users not found. Specify owner.objectname or use sp_help to check whether the object exists'
 > ```
@@ -67,7 +67,9 @@ information that might be useful:
 - your current working directory
 - the full error message
 - the full stack trace
-- logging, including timestamps
+- log messages
+- timestamps
+- paths to source files
 
 Don't worry if the transcript seems a little long.  The computer can handle it.
 

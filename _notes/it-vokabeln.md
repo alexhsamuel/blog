@@ -133,6 +133,9 @@
 - cookie
 - ad
 - adblocker
+- search engine
+- to search
+- search result
 
 
 # E-mail
@@ -163,6 +166,10 @@
 - follower
 - influencer
 - like
+- blog
+- channel
+- post
+- tweet
 
 
 # UI und Grafik
